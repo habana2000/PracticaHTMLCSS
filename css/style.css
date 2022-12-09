@@ -1,1 +1,18 @@
 /* CSS */
+
+.footer .social {
+    background-color: red;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.footer .social-item {
+    width: 1em;
+    height: 1em;
+}
+
+.footer .social-icon {
+    width: 1em;
+    height: 1em;
+}
