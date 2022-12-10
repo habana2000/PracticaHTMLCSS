@@ -1,18 +1,107 @@
 /* CSS */
 
+/* Variables */
+:root {
+    font-size: 24px;    
+    --main-background-color: #4c4ee6;
+    --main-color: #fff;
+}
+
+/* clases : MOBILE FIRST */
+
+* {
+    box-sizing: border-box;
+    background-color: var(--main-background-color);
+    color: var(--main-color);
+}
+
+.header {
+    padding: 10px 20px;
+    background-color: var(--main-background-color);
+    color: var(--main-color);
+}
+
+.navbar {
+    background-color: var(--main-background-color);
+    color: var(--main-color);
+    display: none;
+}
+
+.section h1 , .section p {
+    background-color: var(--main-color);
+    color: var(--main-background-color);
+}
+
+.section p {
+    font-size: 0.5em;    
+}
+
+.projects {
+
+}
+
+.skills {
+
+}
+
+.contact {
+
+}
+
+.footer {
+    background-color: var(--main-background-color);
+    color: var(--main-color);
+}
 .footer .social {
-    background-color: red;
     display: flex;
     justify-content: space-around;
     padding: 10px;
 }
 
 .footer .social-item {
-    width: 1em;
-    height: 1em;
+    width: 2em;
+    height: 2em;
 }
 
 .footer .social-icon {
-    width: 1em;
-    height: 1em;
+    width: 2em;
+    height: 2em;
 }
+
+/* Media Queries: DESKTOP */
+
+@media screen and (min-width: 546px) {
+    /* CSS ancho > 546px */
+    .header {
+        display: none;
+    }
+    .navbar {
+        border-block-start-color: var(--main-background-color);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    .navbar .menu {
+        display: flex;
+    }
+    
+    .navbar .menu .menu-item a {
+        margin-left: 10px;
+        text-decoration: none;
+    }
+    
+        
+}
+
+/* Efecto HOVER */
+
+a {
+    background-color: var(--main-background-color);
+    transition: background-color .5s;
+  }
+  
+  a:hover {
+    background-color: lightblue;
+  }
