@@ -14,16 +14,19 @@ Xavi Roca Vilalta (NOV.22)
 * Verificación disponibilidad en <https://caniuse.com>
 
 ### Links con estado hover suavizado con una transición 
-* Código en `style.css` :
+* Código en `transition.css` :
 ~~~
-a {
+.menu-item a {
     background-color: var(--main-background-color);
     transition: background-color .5s;
   }
-  
-  a:hover {
-    background-color: lightblue;
-  }
+
+@media screen and (min-width: 768px) {
+    .menu-item a:hover {
+        cursor: pointer;
+        background-color: lightblue;
+    }  
+}
 ~~~
 
 ### Header con imagen de fondo optimizada a distintas resoluciones, e imagen distinta para distintos tamaños.
@@ -81,7 +84,7 @@ a {
 ## Opcionales
 
 ### Menu burger basado en CSS
-* ...
+* Ref --> https://alvarotrigo.com/blog/hamburger-menu-css-responsive/
 
 ### Despliegue en Github pages
 * ...

@@ -1,0 +1,15 @@
+/* Transiciones y animaciones */
+
+/* Efecto HOVER en los enlaces de la cabecera*/
+
+.menu-item a {
+    background-color: var(--main-background-color);
+    transition: background-color .5s;
+  }
+
+@media screen and (min-width: 620px) {
+    .menu-item a:hover {
+        cursor: pointer;
+        background-color: lightblue;
+    }  
+}
