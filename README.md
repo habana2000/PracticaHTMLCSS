@@ -58,15 +58,72 @@ Xavi Roca Vilalta (NOV.22)
 ~~~
    
 ### Carrusel con nuestros trabajos
-* ...
+* He utilizado el ejemplo de carrusel que trabajamos en la clase
+* He insertado algun video de Youtube mediante iframe, con el código embebido que propone Youtube directamente, eliminando las dimensiones fijas
 
 ### Skills con progreso
-* ...
+* He utilizado la orientación que nos diste en el discord: dos DIVs anidados, el de fuera con el borde y el de dentro sólido con un `width`igual al porcentaje del skill
+* Código HTML:
+  ~~~
+            <div class="skill-item">
+                <div>
+                    <label class="skill-label" for="git">GIT</label> 
+                </div>
+                <div class="skill-border">
+                    <div class="skill-progress level25">25%</div>    
+                </div>    
+            </div>
+ ~~~
+ * Código CSS:
+ ~~~
+ .skills .skill-border {
+    display: block;
+    border: 1px solid var(--main-background-color);
+    border-radius: 5%;
+    height: 1em;
+    width: 100px;
+}
+
+.skills .skill-progress {
+    display: block;
+    background-color: var(--main-background-color);
+    height: 100%;
+    font-size: 1em;
+    color: var(--main-color);
+    text-align: left;
+}
+
+.skills .level25 {
+    width: 25%;
+}
+
+.skills .level50 {
+    width: 50%;
+}
+
+.skills .level75 {
+    width: 75%;
+}
+
+.skills .level00 {
+    width: 100%;
+}
+~~~
 
 ### Validación html de cada input
 * Código:
 ~~~
 <input type="text" name="Github tag" id="githug-tag" pattern="/@([A-Za-z0-9_]{1,15})/">
+~~~
+
+### Links a redes sociales sin dejar rastro en ellas
+* Código: atributo -->  `rel="noreferrer noopener"`
+~~~
+            <div class="social-item">
+                <a href="https://twitter.com/XaviRocaV" target="_blank" rel="noreferrer noopener">
+                    <img class="social-icon" src="images/twitter.png" alt="twitter">
+                </a>
+            </div>
 ~~~
 
 ### Página con nuestros trabajos usando css grid
