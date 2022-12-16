@@ -10,6 +10,7 @@
     height: 30vh;
 }
 
+/*
 .skill-item {
     width: 80px;
     height: 1em;
@@ -18,6 +19,7 @@
     padding: 10px;
     
 }
+*/
 
 .skill-label {
     width: 100%;
@@ -30,35 +32,23 @@
 /* Barras de progeso de los skills */
 
 .skills .skill-border {
-    display: block;
     border: 1px solid var(--main-background-color);
     border-radius: 5%;
     height: 1em;
-    width: 100px;
+    width: 200px;
+    overflow: hidden;
 }
 
 .skills .skill-progress {
-    display: block;
-    background-color: var(--main-background-color);
+    background-color: lightskyblue;
     height: 100%;
-    font-size: 1em;
     color: var(--main-color);
-    text-align: left;
-}
-
-.skills .level25 {
-    width: 25%;
-}
-
-.skills .level50 {
+    animation: progress-bar 3s;
     width: 50%;
 }
 
-.skills .level75 {
-    width: 75%;
-}
-
-.skills .level00 {
-    width: 100%;
+@keyframes progress-bar {
+    0% {width: 0;}
+    100% {width: 50%;}
 }
 
