@@ -180,48 +180,42 @@
         <h1>Contact</h1>
         <form 
             action="./registro-completado.html" 
-            method="post"
+            method="get"
         >
-            <div>
-                <table class="table">
-                    <tr>
-                        <td  class="table-item">
+                <div class="table">
+                        <div class="form-item">
                             <div>
                                 <label for="name">Name</label>
                             </div>
                             <div>
                                 <input required type="text" name="Name" id="name" placeholder="name">
                             </div>
-                        </td>
-                        <td class="table-item">
+                        </div>
+                        <div class="form-item">
                             <div>
                                 <label for="last-name">Last name</label>
                             </div>
                             <div>
                                 <input required type="text" name="Last Name" id="last-name" placeholder="last name">
                             </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="table-item">
+                        </div>
+                        <div class="form-item">
                             <div>
                                 <label for="email">eMail</label>
                             </div>
                             <div>
                                 <input required type="email" name="eMail" id="email" placeholder="eMail">
                             </div>
-                        </td>
-                        <td class="table-item">
+                        </div>
+                        <div class="form-item">
                             <div>
                                 <label for="phone">Phone number</label>
                             </div>
                             <div>
                                 <input required type="text" name="Phone number" id="last-name" placeholder="phone number" pattern="[0-9]+">
                             </div>
-                        </td>
-                    </tr>
-                </table>
-            </div>
+                        </div>
+                </div>
 
             <div class="origin">
                 <p>Origin</p>
@@ -241,16 +235,19 @@
                     <li class="origin-item">
                         <input type="radio" name="origin" id="github" value="Github">
                         <label class="origin-label" for="github">En Github</label>
-                        <br>
-                        <label for="github-tag">Github tag</label>
-                        <!-- Pattern viejo 
-                        <input type="text" name="Github tag" id="githug-tag" pattern="@[A-Za-z0-9_]{1,15}">
-                        -->
-                        <input type="text" name="Github tag" id="githug-tag" pattern="^@[^\s]+">
                         </li>
                 </ul>
                 <fieldset class="github-tag">
                 </fieldset>
+            </div>
+
+            <div class="form-item">
+                <div>
+                    <label for="github-tag">Github tag</label>
+                </div>
+                <div>
+                    <input type="text" name="Github tag" id="githug-tag" placeholder="Github tag" pattern="^@[^\s]+">
+                </div>
             </div>
 
             <Div class="text">
@@ -258,7 +255,9 @@
                 <textarea required minlength="20" name="text" id="text" cols="100%" rows="5">Type your message</textarea>
             </Div>
 
-            <button type="submit">Send</button>
+            <div class="botones">
+                <button type="submit">Send</button>
+            </div>
 
         </form>
     </section>

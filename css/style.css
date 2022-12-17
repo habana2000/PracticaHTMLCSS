@@ -52,22 +52,34 @@
 
 }
 
+/* Contact form */
+
 .contact {
     background-color: var(--main-color);
     color: var(--main-background-color);
 }
 
-.table input {
+.contact .table {
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.contact input {
     border-color: var(--main-background-color);
 }
 
-.contact .table .table-item {
+.contact .form-item {
     font-size: 0.5em;
     padding: 10px;
 }
 
 .contact .origin {
     font-size: 05.em;
+    padding: 10px;
 }
 
 .contact .origin .origin-item {
@@ -81,7 +93,15 @@
 
 .contact .text {
     font-size: 0.5em;
+    padding: 10px;
 }
+
+.contact .botones {
+    padding: 10px;
+}
+
+
+/* Footer */
 
 .footer {
     background-color: var(--main-background-color);
