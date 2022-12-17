@@ -39,16 +39,33 @@
     overflow: hidden;
 }
 
-.skills .skill-progress {
+/* 50% de skill */
+
+.skills .skill-progress50 {
     background-color: lightskyblue;
     height: 100%;
     color: var(--main-color);
-    animation: progress-bar 3s;
+    animation: progress-bar50 2s;
     width: 50%;
 }
 
-@keyframes progress-bar {
+@keyframes progress-bar50 {
     0% {width: 0;}
     100% {width: 50%;}
+}
+
+/* 75% de skill */
+
+.skills .skill-progress75 {
+    background-color: lightskyblue;
+    height: 100%;
+    color: var(--main-color);
+    animation: progress-bar75 3s;
+    width: 75%;
+}
+
+@keyframes progress-bar75 {
+    0% {width: 0;}
+    100% {width: 75%;}
 }
 
