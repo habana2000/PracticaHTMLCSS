@@ -23,34 +23,51 @@
 }
 
 .carousel-slides > div {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
     background-color: rgb(68,68,68);
     color: var(--main-color);
     height: 100%;
     width: 100%;
 }   
 
-.carousel-slides div {
-    align-content: center;
+
+/* Projects grid */
+
+.carousel-project {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2em 1fr 3.5em;
+    grid-template-areas: 
+    "title" 
+    "video" 
+    "description"
+    ;
 }
 
-.carousel-slides h2 {
+.carousel-project .project-title {
+    display: block;
     padding: 10px;
+    grid-area: title;
 }
 
 
-.carousel-slides iframe {
-    align-self: center;
+.carousel-project .project.video {
+    display: block;
+    padding: 10px;
     height: 100%;
+    grid-area: video;
 }
 
-.carousel-slides p {
+.carousel-project .project-description {
+    display: block;
+    padding: 10px; 
+    grid-area: description;
+}
+
+.carousel-project .project-description p {
     background-color: rgb(68,68,68);
     color: var(--main-color);
-    padding: 10px;
     max-width: 600px;
     align-self: center;
+    font-size: large;
 }
+
