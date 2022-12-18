@@ -29,8 +29,21 @@
     width: 100%;
 }   
 
+/* Pie del carusel */
 
-/* Projects grid */
+/*
+.carousel-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+*/
+
+
+/* Projects carrusel grid */
 
 .carousel-project {
     display: grid;
@@ -70,4 +83,7 @@
     align-self: center;
     font-size: large;
 }
+
+/* Project lis - GRID */
+
 

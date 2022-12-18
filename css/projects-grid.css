@@ -1,0 +1,64 @@
+/* CSS del grid de detalles del proyecto */
+
+/* Efecto mostrar/ocultar */
+
+.filter-content {
+    height: 1vh;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 100%;
+    z-index: 9999;
+    transition: left 0.4s ease;
+}
+
+.filter-content h1 {
+    display: block;
+    background-color: red;
+    color: white;
+}
+
+.view-option-anchor {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.view-option-anchor:checked + .filter-content{
+   left: 0;
+   height: 20vh;
+}
+
+/* GRID */
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.grid-element {
+    display: block;
+    background-color: green;
+    color: yellow;
+}
+
+@media screen and (min-width: 546px) {
+    .projects-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 980px) {
+    .projects-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr ;
+    }
+}
+
+

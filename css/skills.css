@@ -34,8 +34,7 @@
     background-color: lightskyblue;
     height: 100%;
     color: var(--main-color);
-    animation: progress-bar50 2s;
-    width: 50%;
+    animation: progress-bar50 2s forwards;
 }
 
 @keyframes progress-bar50 {
@@ -49,8 +48,7 @@
     background-color: lightskyblue;
     height: 100%;
     color: var(--main-color);
-    animation: progress-bar75 3s;
-    width: 75%;
+    animation: progress-bar75 3s forwards;
 }
 
 @keyframes progress-bar75 {
