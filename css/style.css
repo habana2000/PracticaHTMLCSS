@@ -50,6 +50,7 @@ body {
     padding: 10px;
     border-top: 1px solid var(--main-background-color);
     border-bottom: 1px solid var(--main-background-color);
+    background-color: lightcyan;
 }
 
 .projects {

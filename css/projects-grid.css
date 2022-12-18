@@ -74,6 +74,8 @@
 }
 
 .grid-element img {
+    display: block;
+    margin: auto;
     height: 32px;
     width: 32px;
 }

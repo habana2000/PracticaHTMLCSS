@@ -63,8 +63,9 @@
 }
 
 
-.carousel-project .project.video {
+.carousel-project .project.video, iframe {
     display: block;
+    margin: auto;
     padding: 10px;
     height: 100%;
     grid-area: video;
@@ -74,6 +75,7 @@
     display: block;
     padding: 10px; 
     grid-area: description;
+    margin: auto;
 }
 
 .carousel-project .project-description p {
