@@ -5,7 +5,10 @@ Xavi Roca Vilalta (NOV.22)
 * index.html
 * carperta `css`
     - reset.css (para limpiar los defectos de los navegadores)
-    - style.css
+    - style.css (estilos generales)
+    - carousel.css (para el carrusel de proyectos)
+    - skills.css (para las barras de progreso)
+    - transition.css (efecto HOVER en las opciones de las navbar)
 * carpeta `images`
 
 ## Recursos utilizados para cada uno de los puntos
@@ -63,57 +66,11 @@ Xavi Roca Vilalta (NOV.22)
 
 ### Skills con progreso
 * He utilizado la orientación que nos diste en el discord: dos DIVs anidados, el de fuera con el borde y el de dentro sólido con un `width`igual al porcentaje del skill
-* Código HTML:
-  ~~~
-            <div class="skill-item">
-                <div>
-                    <label class="skill-label" for="git">GIT</label> 
-                </div>
-                <div class="skill-border">
-                    <div class="skill-progress level25">25%</div>    
-                </div>    
-            </div>
- ~~~
- * Código CSS:
- ~~~
- .skills .skill-border {
-    display: block;
-    border: 1px solid var(--main-background-color);
-    border-radius: 5%;
-    height: 1em;
-    width: 100px;
-}
-
-.skills .skill-progress {
-    display: block;
-    background-color: var(--main-background-color);
-    height: 100%;
-    font-size: 1em;
-    color: var(--main-color);
-    text-align: left;
-}
-
-.skills .level25 {
-    width: 25%;
-}
-
-.skills .level50 {
-    width: 50%;
-}
-
-.skills .level75 {
-    width: 75%;
-}
-
-.skills .level00 {
-    width: 100%;
-}
-~~~
 
 ### Validación html de cada input
 * Código:
 ~~~
-<input type="text" name="Github tag" id="githug-tag" pattern="/@([A-Za-z0-9_]{1,15})/">
+<input type="text" name="Github tag" id="githug-tag" placeholder="Github tag" pattern="^@[^\s]+">
 ~~~
 
 ### Links a redes sociales sin dejar rastro en ellas
@@ -127,30 +84,31 @@ Xavi Roca Vilalta (NOV.22)
 ~~~
 
 ### Página con nuestros trabajos usando css grid
-* ...
+* He programado un botón debajo del carrusel para que aparezca el grid de detalles deproyectos desplazandose desde la derecha. El GRID está maquetado a 3 resolcuiones diferentes, mobile first of course.
 
 ### Etiquetas de contenido semántico
 * Etiquetas utilizadas: HEADER, NAV, SECTION, FOOTER
 
 ### Mobile first
-* Las Media Queries se utilizan para maquetar en alta resolución
+* Las Media Queries se utilizan para maquetar con más ancho de pantalla, tipo desktop
 
 ### Animaciones o interactividad únicamente con css
-* ...
+* He utilizado `animation` y `transition`, sin javascript
 
 ## Opcionales
 
 ### Menu burger basado en CSS
 * Ref --> https://alvarotrigo.com/blog/hamburger-menu-css-responsive/
+* No me ha dado tiempo a implementarlo
 
 ### Despliegue en Github pages
-* ...
+* Desplegado en Github pages
 
 ### Página 404
-* ...
+* Creada la página 404
 
 ### Página 500
-* ...
+* Creada la página 500
 
 ## Github y desarrollo del proyecto
 * Se inicia la construcción del portfolio trabajando contra este repositorio Github.
