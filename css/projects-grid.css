@@ -2,6 +2,11 @@
 
 /* Efecto mostrar/ocultar */
 
+.projects-details {
+    padding: 0 10px;
+    overflow: hidden;
+}
+
 .filter-content {
     height: 1vh;
     width: 100%;
@@ -14,8 +19,9 @@
 
 .filter-content h1 {
     display: block;
-    background-color: red;
-    color: white;
+    padding: 10px;
+    background-color: var(--main-background-color);
+    color: var(--main-color);
 }
 
 .view-option-anchor {
@@ -28,8 +34,10 @@
 
 .view-option-anchor:checked + .filter-content{
    left: 0;
-   height: 20vh;
+   height: 100vh;
 }
+
+ 
 
 /* GRID */
 
@@ -41,8 +49,33 @@
 
 .grid-element {
     display: block;
-    background-color: green;
-    color: yellow;
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid var(--main-background-color);
+    border-radius: 5%;
+    background-color: lightcyan;
+    color: var(--main-background-color);
+}
+
+.grid-element h3 {
+    font-size: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.grid-element p {
+    font-size: 14px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.grid-element a {
+    padding-bottom: 10px;
+}
+
+.grid-element img {
+    height: 32px;
+    width: 32px;
 }
 
 @media screen and (min-width: 546px) {
@@ -51,6 +84,10 @@
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
     }
+
+    .view_option-anchor:checked + .filter-content {
+        height: 50vh;
+    }
 }
 
 @media screen and (min-width: 980px) {
@@ -58,6 +95,10 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr ;
+    }
+
+    .view_option-anchor:checked + .filter-content {
+        height: 25vh;
     }
 }
 
