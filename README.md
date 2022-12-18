@@ -102,7 +102,7 @@ Xavi Roca Vilalta (NOV.22)
 * No me ha dado tiempo a implementarlo
 
 ### Despliegue en Github pages
-* Desplegado en Github pages
+* Desplegado en Github pages --> https://habana2000.github.io/PracticaHTMLCSS/
 
 ### Página 404
 * Creada la página 404
