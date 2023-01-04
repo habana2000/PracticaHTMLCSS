@@ -116,5 +116,30 @@ Xavi Roca Vilalta (NOV.22)
 * La práctica se ha trabajado desde distintos equipos, cada uno con su repositorio local y configuración GIT.
 
 
+# Resultado práctica: APTO
+
+~~~
+---------- Mensaje original ----------
+De: Kevin Martinez <kevinccbsg@gmail.com>
+Para: xroca@vilamatica.com
+Cc: Oscar Javier Paredes <administracion@keepcoding.io>
+Fecha: 30/12/2022 21:56 CET
+Asunto: Práctica HTML y CSS
+
+
+Hola Javier,
+
+El resultado de la práctica es APTO. Me costo un poco poner el APTO en este caso ya que en la resolución mobile se rompe, la web generando un scroll horizontal. Esto es debido al textarea, que tienes puesto las cols en el html. Sería mejor haberle puesto un 100% a ese elemento.
+
+Otras dos cosas que se ven mal es el carousel. Esto es porque usas overflow scroll y debería ser hidden para simular el efecto de carousel.
+
+Por último, en la parte de mostrar proyectos al abrirlo (eso mola bastante) se queda cortado. Eso es porque usas 100vh tendrías que haber usado un porcentaje.
+
+Al final resolviste lo de la animación de la progress bar, Genial!.
+
+Intenta mejorar esos pequeños detalles, pero quitando esos aspectos visuales todo lo requerido y extra está correcto por eso el APTO.
+
+Un saludo.
+~~~
 
 
