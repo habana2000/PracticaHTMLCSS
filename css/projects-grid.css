@@ -34,7 +34,7 @@
 
 .view-option-anchor:checked + .filter-content{
    left: 0;
-   height: 100vh;
+   height: 50%;
 }
 
  
